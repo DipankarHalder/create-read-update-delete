@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import _ from 'lodash';
+import React, { Component } from 'react';
 
 class TableBody extends Component {
 
@@ -16,7 +16,7 @@ class TableBody extends Component {
         const { data, columns } = this.props;
         return (
             <tbody>
-                {data.map(item =>
+                {data.reverse().map(item =>
                     <tr key={item._id}>
                         {columns.map(column =>
                             <td key={this.createKey(item, column)}>

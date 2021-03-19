@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ListGroup = ({ items, textProperty, valueProperty, selectedItem, onItemSelect }) => {
     return (
@@ -9,7 +9,7 @@ const ListGroup = ({ items, textProperty, valueProperty, selectedItem, onItemSel
                     <li
                         key={item[valueProperty]}
                         onClick={() => onItemSelect(item)}
-                        style={{ padding: '0.40rem 0.5rem', fontSize: '0.875rem' }}
+                        style={{ padding: '0.40rem 0.5rem', fontSize: '0.875rem', cursor: 'pointer' }}
                         className={item === selectedItem ? "list-group-item active" : "list-group-item"}>
                         {item[textProperty]}
                     </li>
